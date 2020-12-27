@@ -11,6 +11,11 @@
 		4558BB112598F5EA00CC1E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558BB102598F5EA00CC1E2A /* ContentView.swift */; };
 		4558BB132598F5EB00CC1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4558BB122598F5EB00CC1E2A /* Assets.xcassets */; };
 		4558BB162598F5EB00CC1E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4558BB152598F5EB00CC1E2A /* Preview Assets.xcassets */; };
+		4558BB202598FD6A00CC1E2A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558BB1F2598FD6A00CC1E2A /* CameraViewController.swift */; };
+		4558BB232598FD9100CC1E2A /* GoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558BB222598FD9100CC1E2A /* GoView.swift */; };
+		4558BB262598FDAB00CC1E2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558BB252598FDAB00CC1E2A /* SettingsView.swift */; };
+		4558BB292598FDBA00CC1E2A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558BB282598FDBA00CC1E2A /* AboutView.swift */; };
+		45804DFF25990652002DEE34 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804DFE25990652002DEE34 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		4558BB122598F5EB00CC1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4558BB152598F5EB00CC1E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4558BB172598F5EB00CC1E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4558BB1F2598FD6A00CC1E2A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4558BB222598FD9100CC1E2A /* GoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoView.swift; sourceTree = "<group>"; };
+		4558BB252598FDAB00CC1E2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4558BB282598FDBA00CC1E2A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		45804DFE25990652002DEE34 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,9 @@
 		4558BB0D2598F5EA00CC1E2A /* traficSignRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				4558BB0E2598F5EA00CC1E2A /* traficSignRecognitionApp.swift */,
-				4558BB102598F5EA00CC1E2A /* ContentView.swift */,
-				4558BB122598F5EB00CC1E2A /* Assets.xcassets */,
-				4558BB172598F5EB00CC1E2A /* Info.plist */,
+				45804DFB259903B0002DEE34 /* App */,
+				45804DFA259903A5002DEE34 /* Models */,
+				4558BB1E2598FD4400CC1E2A /* Views */,
 				4558BB142598F5EB00CC1E2A /* Preview Content */,
 			);
 			path = traficSignRecognition;
@@ -67,6 +76,44 @@
 				4558BB152598F5EB00CC1E2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4558BB1E2598FD4400CC1E2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4558BB2C2598FDF500CC1E2A /* GoView */,
+				4558BB102598F5EA00CC1E2A /* ContentView.swift */,
+				4558BB222598FD9100CC1E2A /* GoView.swift */,
+				4558BB252598FDAB00CC1E2A /* SettingsView.swift */,
+				4558BB282598FDBA00CC1E2A /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4558BB2C2598FDF500CC1E2A /* GoView */ = {
+			isa = PBXGroup;
+			children = (
+				4558BB1F2598FD6A00CC1E2A /* CameraViewController.swift */,
+			);
+			path = GoView;
+			sourceTree = "<group>";
+		};
+		45804DFA259903A5002DEE34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45804DFE25990652002DEE34 /* CameraController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45804DFB259903B0002DEE34 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4558BB0E2598F5EA00CC1E2A /* traficSignRecognitionApp.swift */,
+				4558BB122598F5EB00CC1E2A /* Assets.xcassets */,
+				4558BB172598F5EB00CC1E2A /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4558BB232598FD9100CC1E2A /* GoView.swift in Sources */,
+				4558BB202598FD6A00CC1E2A /* CameraViewController.swift in Sources */,
+				45804DFF25990652002DEE34 /* CameraController.swift in Sources */,
 				4558BB112598F5EA00CC1E2A /* ContentView.swift in Sources */,
 				4558BB0F2598F5EA00CC1E2A /* traficSignRecognitionApp.swift in Sources */,
+				4558BB292598FDBA00CC1E2A /* AboutView.swift in Sources */,
+				4558BB262598FDAB00CC1E2A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +323,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"traficSignRecognition/Preview Content\"";
 				DEVELOPMENT_TEAM = NFVP36URLF;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = traficSignRecognition/Info.plist;
+				INFOPLIST_FILE = traficSignRecognition/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubzzak.traficSignRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -293,12 +346,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"traficSignRecognition/Preview Content\"";
 				DEVELOPMENT_TEAM = NFVP36URLF;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = traficSignRecognition/Info.plist;
+				INFOPLIST_FILE = traficSignRecognition/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubzzak.traficSignRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GoView.swift
 //  traficSignRecognition
 //
 //  Created by Jakub Žák on 27/12/2020.
@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GoView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+			VStack {
+				CameraViewController()
+				Text("Good job!")
+			}
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GoView()
     }
 }
